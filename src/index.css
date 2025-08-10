@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  src: url('./assets/fonts/barkanondemo-bold.otf') format('opentype');
+  font-family: 'barkanondemo-bold';
+}
+
+@font-face {
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Poppins-Regular';
+}
+
+body {
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+@theme {
+  --font-primary: 'barkanondemo-bold';
+  --font-secondary: 'Poppins-Regular';
+}
